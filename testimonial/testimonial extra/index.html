@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="veiw-box">
+            <div id="testimonials">
+                
+                <div class="user">
+                    <img src="images/user1.jpg" alt="">
+                    <p>I am Mir Lutfur Rahman and I received my B.Sc. (Engineering) in Computer Science and Engineering (CSE) from North East University Bangladesh (NEUB). I am currently studying MSc Advanced Computer Science with Placement in the University of Hertfordshire.</p>
+                    <h3>Mir Lutfur Rahman</h3>
+                </div>
+                
+                <div class="user space">
+                    <img src="images/user2.jpg" alt="">
+                    <p>I am a Lecturer in the Department of Science and Engineering at North East University Bangladesh. Currently, I am pursuing MSc. (Thesis) degree in Computer Science and Engineering from Shahjalal University of Science and Technology. My current research includes Data compression, Huffman coding, Blockchain, Trust management, and Security.</p>
+                    <h3>Pranta Sarker
+                    </h3>
+                </div>
+                
+                <div class="user">
+                    <img src="images/user1.jpg" alt="">
+                    <p>I am Mir Lutfur Rahman and I received my B.Sc. (Engineering) in Computer Science and Engineering (CSE) from North East University Bangladesh (NEUB). I am currently studying MSc Advanced Computer Science with Placement in the University of Hertfordshire.</p>
+                    <h3>Mir Lutfur Rahman</h3>
+                </div>
+                
+                
+                
+            </div>
+            
+            <div class="controls">
+                <span id="control1"></span>
+                <span id="control2" class="active"></span>
+                <span id="control3"></span>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+    
+        var testimonials = document.getElementById('testimonials');
+        var control1 = document.getElementById('control1');
+        var control2 = document.getElementById('control2');
+        var control3 = document.getElementById('control3');
+        
+        
+        control1.onclick=function(){
+            testimonials.style.transform = "translateX(870px)";
+            control1.classList.add("active");
+            control2.classList.remove("active");
+            control3.classList.remove("active");
+        }
+        
+        control2.onclick=function(){
+            testimonials.style.transform = "translateX(0px)";
+            control1.classList.remove("active");
+            control2.classList.add("active");
+            control3.classList.remove("active");
+        }
+        
+        control3.onclick=function(){
+            testimonials.style.transform = "translateX(-870px)";
+            control1.classList.remove("active");
+            control2.classList.remove("active");
+            control3.classList.add("active");
+        }
+        
+        
+        
+        
+    
+    </script>
+    
+    
+    
+    
+    
+
+</body>
+
+</html>
